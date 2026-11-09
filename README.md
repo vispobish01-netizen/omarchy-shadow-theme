@@ -1,18 +1,29 @@
 # Void
 
-Near-monochrome, ultra-dark, quiet theme for Omarchy.
+Near-monochrome, ultra-dark muted-sage theme for Omarchy.
 
 ![Void preview](preview.png)
 
 ## Design Identity
 
-Void delivers a deep, distraction-free environment built around pitch-black `#050506` surfaces, subtle charcoal framing `#1c1e22`, subdued readable foreground text `#b4b8bd`, and delicate pale cream `#d8d3bf` accents:
+Void delivers a deep, distraction-free environment built around pitch-black `#050506` surfaces, subtle charcoal framing `#1c1e22`, subdued readable foreground text `#b4b8bd`, calm sage-green accents (`#5f8068` / `#7fa488`), and delicate pale cream highlight `#d8d3bf`:
 
 - **Surface Depth Hierarchy:** Deep `#050506` surfaces paired with `#030304`, `#020202`, and `#0d0e10` tiers for cards, popups, and scrims.
 - **Hyprland Borders:** Coordinated dual-stop gradient (`rgba(d8d3bfee) rgba(5b5f66ee) 45deg`) for active windows and subtle `#1c1e22` for inactive windows.
 - **ANSI Legacy Parity:** Full 16-color ANSI block (`color0` through `color15`) mapped directly into the Void palette for zero template evaluation warnings across terminal emulators and CLI tools.
-- **Harmonious Icons:** Native `Yaru-sage-dark` pairing providing calm, muted sage-green folders and clean file icons that seamlessly blend with dark surfaces.
-- **Standard Omarchy Integration:** 100% compliant with standard Omarchy desktop theming and Libadwaita dark mode.
+- **Native Libadwaita / GTK Integration:** Clean adherence to Omarchy's official pattern—relying on native `prefer-dark` and `Adwaita-dark` GNOME color schemes without fragile CSS hacks, ensuring proper sidebar selections and native contrast.
+- **Organic Sage Icons:** Paired with the official `Yaru-sage-dark` icon suite for calm, organic sage-green folders and complete GNOME mime-type coverage.
+
+---
+
+## Prerequisites
+
+Void pairs with the official **Yaru-sage-dark** icon suite to provide organic sage-green folder icons across Nautilus, file pickers, and desktop launcher menus:
+
+```sh
+omarchy pkg add yaru-icon-theme
+# or: sudo pacman -S yaru-icon-theme
+```
 
 ---
 

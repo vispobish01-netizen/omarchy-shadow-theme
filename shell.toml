@@ -43,23 +43,23 @@ scale-with-font = true
 base-size = 12
 
 [popups]
-background = "#0d0e10"
-background-alpha = 0.95
+background = "#050506"
+background-alpha = 0.98
 text = "#b4b8bd"
 border = "hyprland.active-border"
 border-alpha = 1.0
 border-width = 1
 
 [tooltip]
-background = "#0d0e10"
-background-alpha = 0.95
+background = "#050506"
+background-alpha = 0.98
 text = "#b4b8bd"
 border = "#1c1e22"
 border-alpha = 1.0
 
 [notifications]
-background = "#0d0e10"
-background-alpha = 0.95
+background = "#050506"
+background-alpha = 0.98
 text = "#b4b8bd"
 border = "hyprland.active-border"
 border-alpha = 1.0
@@ -67,13 +67,13 @@ border-width = 1
 countdown = "#d8d3bf"
 
 [launcher]
-background = "#0d0e10"
-background-alpha = 0.95
+background = "#050506"
+background-alpha = 0.98
 text = "#b4b8bd"
 border = "hyprland.active-border-foreground"
 border-alpha = 1.0
-scrim = "#050506"
-scrim-alpha = 0.35
+scrim = "#020202"
+scrim-alpha = 0.45
 selected-background = "#1a1c20"
 selected-background-alpha = 1.0
 selected-text = "#d8d3bf"
@@ -81,13 +81,13 @@ selected-border = "#d8d3bf"
 selected-border-alpha = 0.35
 
 [menu]
-background = "#0d0e10"
-background-alpha = 0.95
+background = "#050506"
+background-alpha = 0.98
 text = "#b4b8bd"
 border = "hyprland.active-border-foreground"
 border-alpha = 1.0
-scrim = "#050506"
-scrim-alpha = 0.35
+scrim = "#020202"
+scrim-alpha = 0.45
 selected-background = "#1a1c20"
 selected-background-alpha = 1.0
 selected-text = "#d8d3bf"
@@ -95,14 +95,14 @@ selected-border = "#d8d3bf"
 selected-border-alpha = 0.35
 
 [polkit]
-background = "#0d0e10"
-background-alpha = 0.95
+background = "#050506"
+background-alpha = 0.98
 text = "#b4b8bd"
 text-error = "#a33b3b"
 border = "hyprland.active-border"
 border-error = "#a33b3b"
 border-alpha = 1.0
-scrim = "#050506"
+scrim = "#020202"
 scrim-alpha = 0.5
 accent = "#d8d3bf"
 
@@ -120,7 +120,7 @@ selection = "#d8d3bf"
 selection-alpha = 0.15
 
 [image-picker]
-scrim = "#050506"
+scrim = "#020202"
 scrim-alpha = 0.5
 text = "#b4b8bd"
 selected-border = "#d8d3bf"

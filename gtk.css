@@ -1,69 +1,142 @@
-/* Void — coordinated ultra-dark monochrome surfaces and pale cream accents for GTK 3 / GTK 4 */
+/* ── Void · GTK 3 & GTK 4 / Libadwaita Style Sheet ────────────────────────
+   Ultra-dark monochrome surfaces (#050506) with soft cream accents (#d8d3bf)
+   and deep charcoal borders (#1c1e22). Seamless void look for Nautilus & GNOME.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* ── Surface Colors (GTK4 / Libadwaita) ─────────────────────────────────── */
 @define-color window_bg_color #050506;
 @define-color window_fg_color #b4b8bd;
 @define-color view_bg_color #050506;
 @define-color view_fg_color #b4b8bd;
-@define-color headerbar_bg_color #0d0e10;
+
+@define-color headerbar_bg_color #050506;
 @define-color headerbar_fg_color #b4b8bd;
-@define-color headerbar_backdrop_color #0d0e10;
+@define-color headerbar_backdrop_color #050506;
 @define-color headerbar_border_color #1c1e22;
 @define-color headerbar_shade_color rgba(0, 0, 0, 0.08);
-@define-color sidebar_bg_color #0d0e10;
+
+@define-color sidebar_bg_color #050506;
 @define-color sidebar_fg_color #b4b8bd;
-@define-color sidebar_backdrop_color #0d0e10;
+@define-color sidebar_backdrop_color #050506;
 @define-color sidebar_border_color #1c1e22;
 @define-color sidebar_shade_color rgba(0, 0, 0, 0.08);
-@define-color secondary_sidebar_bg_color #0d0e10;
+
+@define-color secondary_sidebar_bg_color #050506;
 @define-color secondary_sidebar_fg_color #b4b8bd;
-@define-color secondary_sidebar_backdrop_color #0d0e10;
+@define-color secondary_sidebar_backdrop_color #050506;
 @define-color secondary_sidebar_border_color #1c1e22;
-@define-color card_bg_color #0d0e10;
+
+@define-color card_bg_color #050506;
 @define-color card_fg_color #b4b8bd;
 @define-color card_shade_color rgba(0, 0, 0, 0.08);
+
+@define-color dialog_bg_color #050506;
+@define-color dialog_fg_color #b4b8bd;
+
 @define-color popover_bg_color #0d0e10;
 @define-color popover_fg_color #b4b8bd;
 @define-color popover_shade_color rgba(0, 0, 0, 0.12);
-@define-color dialog_bg_color #0d0e10;
-@define-color dialog_fg_color #b4b8bd;
-@define-color thumbnail_bg_color #0d0e10;
+
+@define-color thumbnail_bg_color #050506;
 @define-color thumbnail_fg_color #b4b8bd;
+
+/* ── Brand & Accent Tokens ──────────────────────────────────────────────── */
 @define-color accent_bg_color #d8d3bf;
 @define-color accent_fg_color #050506;
 @define-color accent_color #d8d3bf;
+
 @define-color destructive_bg_color #a33b3b;
 @define-color destructive_fg_color #050506;
 @define-color destructive_color #a33b3b;
+
 @define-color error_bg_color #a33b3b;
 @define-color error_fg_color #050506;
 @define-color error_color #a33b3b;
+
 @define-color warning_bg_color #b08d3c;
 @define-color warning_fg_color #050506;
 @define-color warning_color #b08d3c;
+
 @define-color success_bg_color #5f8068;
 @define-color success_fg_color #050506;
 @define-color success_color #5f8068;
+
 @define-color borders #1c1e22;
 @define-color unfocused_borders #1c1e22;
 @define-color shade_color rgba(0, 0, 0, 0.08);
+
+/* ── GTK 3 Compatibility Layer ─────────────────────────────────────────── */
 @define-color theme_bg_color #050506;
 @define-color theme_fg_color #b4b8bd;
 @define-color theme_base_color #050506;
 @define-color theme_text_color #b4b8bd;
 @define-color theme_selected_bg_color #d8d3bf;
 @define-color theme_selected_fg_color #050506;
+
 @define-color insensitive_bg_color #0d0e10;
 @define-color insensitive_fg_color #5b5f66;
 @define-color insensitive_base_color #0d0e10;
+
 @define-color theme_unfocused_bg_color #050506;
 @define-color theme_unfocused_fg_color #5b5f66;
 @define-color theme_unfocused_base_color #050506;
 @define-color theme_unfocused_text_color #5b5f66;
 @define-color theme_unfocused_selected_bg_color #1a1c20;
 @define-color theme_unfocused_selected_fg_color #d8d3bf;
+
 @define-color link_color #d8d3bf;
 @define-color visited_link_color #8b7d96;
 
-selection { background-color: #1a1c20; color: #d8d3bf; }
-button.suggested-action { background-color: #d8d3bf; color: #050506; }
-button.suggested-action:hover { background-color: #e6e2d3; color: #050506; }
-button.destructive-action { background-color: #a33b3b; color: #050506; }
+/* ── Nautilus & Libadwaita View Overrides ────────────────────────────────── */
+window,
+dialog,
+.navigation-sidebar,
+.sidebar,
+headerbar,
+.view,
+iconview,
+textview text {
+  background-color: #050506;
+  color: #b4b8bd;
+}
+
+headerbar {
+  border-bottom: 1px solid #1c1e22;
+  box-shadow: none;
+}
+
+.navigation-sidebar {
+  border-right: 1px solid #1c1e22;
+}
+
+row:selected,
+.navigation-sidebar row:selected {
+  background-color: #1a1c20;
+  color: #d8d3bf;
+}
+
+row:hover:not(:selected),
+.navigation-sidebar row:hover:not(:selected) {
+  background-color: #0d0e10;
+}
+
+/* ── Widget Rules ───────────────────────────────────────────────────────── */
+selection {
+  background-color: #1a1c20;
+  color: #d8d3bf;
+}
+
+button.suggested-action {
+  background-color: #d8d3bf;
+  color: #050506;
+}
+
+button.suggested-action:hover {
+  background-color: #e6e2d3;
+  color: #050506;
+}
+
+button.destructive-action {
+  background-color: #a33b3b;
+  color: #050506;
+}

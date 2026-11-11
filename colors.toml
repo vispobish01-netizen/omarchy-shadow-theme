@@ -1,67 +1,54 @@
-# ── Shadow · Omarchy theme palette ────────────────────────────────────────
-# Identity: ultra-dark monochrome shadow surfaces with pale cream accents.
-#
-# Schema: full modern Omarchy color set (for /usr/share/omarchy/default/themed/*.tpl)
-# PLUS complete 16-color legacy ANSI block (color0 through color15) mapped to Shadow.
-
 mode = "dark"
 
-# ── brand tokens ───────────────────────────────────────────────────────────
-accent               = "#d8d3bf"   # pale cream signature accent
-cursor               = "#d8d3bf"   # cursor accent
-selection            = "#1a1c20"   # focused selection fill
-muted                = "#3a3d42"   # disabled / subdued chrome
+accent = "#d8d3bf"
+cursor = "#d8d3bf"
+selection = "#1a1c20"
+muted = "#3a3d42"
 selection_foreground = "#d8d3bf"
 selection_background = "#1a1c20"
 
-# ── surface depth tokens ──────────────────────────────────────────────────
-background           = "#050506"   # primary ultra-dark surface
-dark_background      = "#030304"   # deeper dropdowns and popovers
-darker_background    = "#020202"   # deepest chrome / scrim / OSD
-lighter_background   = "#0d0e10"   # raised cards / hover states
+background = "#050506"
+dark_background = "#030304"
+darker_background = "#020202"
+lighter_background = "#0d0e10"
 
-# ── foreground tokens ─────────────────────────────────────────────────────
-foreground           = "#b4b8bd"   # primary text
-dark_foreground      = "#5b5f66"   # subdued / inactive text
-light_foreground     = "#b4b8bd"   # clean secondary text
-bright_foreground    = "#e6e2d3"   # bright text and highlighted readouts
+foreground = "#b4b8bd"
+dark_foreground = "#5b5f66"
+light_foreground = "#b4b8bd"
+bright_foreground = "#e6e2d3"
 
-# ── Hyprland borders ──────────────────────────────────────────────────────
-hyprland_active_border   = "rgba(d8d3bfee) rgba(5b5f66ee) 45deg"
+hyprland_active_border = "rgba(d8d3bfee) rgba(5b5f66ee) 45deg"
 hyprland_inactive_border = "#1c1e22"
 
-# ── semantic colors ───────────────────────────────────────────────────────
-red                  = "#a33b3b"
-yellow               = "#b08d3c"
-orange               = "#b08d3c"
-green                = "#5f8068"
-cyan                 = "#6b8f93"
-blue                 = "#4f6d94"
-magenta              = "#8b7d96"
-brown                = "#58461e"
+red = "#a33b3b"
+yellow = "#b08d3c"
+orange = "#b08d3c"
+green = "#5f8068"
+cyan = "#6b8f93"
+blue = "#4f6d94"
+magenta = "#8b7d96"
+brown = "#58461e"
 
-# ── bright variants ───────────────────────────────────────────────────────
-bright_red           = "#c75a5a"
-bright_yellow        = "#cfa94f"
-bright_green         = "#7fa488"
-bright_cyan          = "#8db3b8"
-bright_blue          = "#6f8fba"
-bright_magenta       = "#a899b3"
+bright_red = "#c75a5a"
+bright_yellow = "#cfa94f"
+bright_green = "#7fa488"
+bright_cyan = "#8db3b8"
+bright_blue = "#6f8fba"
+bright_magenta = "#a899b3"
 
-# ── legacy ANSI 0-15 (mapped to Shadow palette to prevent {{ colorN }} gaps) ─
-color0               = "#050506"   # black surface
-color1               = "#a33b3b"   # red
-color2               = "#5f8068"   # green
-color3               = "#b08d3c"   # yellow
-color4               = "#4f6d94"   # blue
-color5               = "#8b7d96"   # magenta
-color6               = "#6b8f93"   # cyan
-color7               = "#b4b8bd"   # white foreground
-color8               = "#3a3d42"   # bright black (muted)
-color9               = "#c75a5a"   # bright red
-color10              = "#7fa488"   # bright green
-color11              = "#cfa94f"   # bright yellow
-color12              = "#6f8fba"   # bright blue
-color13              = "#a899b3"   # bright magenta
-color14              = "#8db3b8"   # bright cyan
-color15              = "#e6e2d3"   # bright white (bright foreground)
+color0 = "#050506"
+color1 = "#a33b3b"
+color2 = "#5f8068"
+color3 = "#b08d3c"
+color4 = "#4f6d94"
+color5 = "#8b7d96"
+color6 = "#6b8f93"
+color7 = "#b4b8bd"
+color8 = "#3a3d42"
+color9 = "#c75a5a"
+color10 = "#7fa488"
+color11 = "#cfa94f"
+color12 = "#6f8fba"
+color13 = "#a899b3"
+color14 = "#8db3b8"
+color15 = "#e6e2d3"

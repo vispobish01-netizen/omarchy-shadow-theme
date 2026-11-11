@@ -1,8 +1,8 @@
-# ── Void · Omarchy theme palette ──────────────────────────────────────────
-# Identity: ultra-dark monochrome void surfaces with pale cream accents.
+# ── Shadow · Omarchy theme palette ────────────────────────────────────────
+# Identity: ultra-dark monochrome shadow surfaces with pale cream accents.
 #
 # Schema: full modern Omarchy color set (for /usr/share/omarchy/default/themed/*.tpl)
-# PLUS complete 16-color legacy ANSI block (color0 through color15) mapped to Void.
+# PLUS complete 16-color legacy ANSI block (color0 through color15) mapped to Shadow.
 
 mode = "dark"
 
@@ -48,7 +48,7 @@ bright_cyan          = "#8db3b8"
 bright_blue          = "#6f8fba"
 bright_magenta       = "#a899b3"
 
-# ── legacy ANSI 0-15 (mapped to Void palette to prevent {{ colorN }} gaps) ─
+# ── legacy ANSI 0-15 (mapped to Shadow palette to prevent {{ colorN }} gaps) ─
 color0               = "#050506"   # black surface
 color1               = "#a33b3b"   # red
 color2               = "#5f8068"   # green

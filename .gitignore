@@ -1,4 +1,14 @@
+# Operating system files
 .DS_Store
 Thumbs.db
+
+# Editor backup and swap files
 *.swp
+*.swo
 *~
+*.bak
+
+# Temporary files
+*.tmp
+*.opt
+tmp_*

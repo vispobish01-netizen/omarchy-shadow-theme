@@ -8,7 +8,7 @@ size-horizontal = 26
 size-vertical = 28
 
 [hyprland]
-active-border = "rgba(d8d3bfee) rgba(585d66ee) 45deg"
+active-border = "rgba(d8d3bfee) rgba(717883ee) 45deg"
 active-border-foreground = "#d8d3bf"
 
 [controls]
@@ -120,8 +120,6 @@ selection = "#d8d3bf"
 selection-alpha = 0.15
 
 [image-picker]
-scrim = "#020202"
-scrim-alpha = 0.5
 text = "#c2c6cc"
 selected-border = "#d8d3bf"
 selected-border-alpha = 1.0
